@@ -3,7 +3,7 @@
 #include "cmath"
 
 bool test_result(double *c, int n) {
-    std::ifstream file("ans.txt");
+    std::ifstream file("../data/ans.txt");
     if (!file.is_open()) {
         std::cerr << "Error opening file for reading." << std::endl;
         return false;

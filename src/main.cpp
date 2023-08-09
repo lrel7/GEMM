@@ -8,7 +8,7 @@
 #define N 2000
 
 void read_mat(double *a, double *b) {
-    std::ifstream file("mat.txt");
+    std::ifstream file("../data/mat.txt");
     if (!file.is_open()) {
         std::cerr << "Error opening file for reading." << std::endl;
         return;

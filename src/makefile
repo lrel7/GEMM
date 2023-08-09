@@ -1,6 +1,6 @@
 CC = g++
-CXXFLAGS = -O3 -march=native -mtune=native -flto -fuse-linker-plugin --std=c++2a -fopenmp -g
-LDFLAGS = -lm -isystem ../benchmark/include -L../benchmark/build/src -lbenchmark -lpthread
+CXXFLAGS = -O3 -march=native -mtune=native -flto -fuse-linker-plugin --std=c++2a -fopenmp -pg
+LDFLAGS = -lm -isystem ../../benchmark/include -L../../benchmark/build/src -lbenchmark -lpthread
 TARGET = matmul
 SOURCES = matmul_${VERSION}.c main.cpp test.cpp
 
